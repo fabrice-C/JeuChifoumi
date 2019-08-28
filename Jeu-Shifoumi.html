@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Jeu de "Chifoumi" en Javascript</title>
+    <script src="js/script0.js"></script>
+    <link rel="stylesheet" type="text/css" href="shifoumi.css" />
+  </head>
+
+  <body>
+    <h1 id="rochetitre">CHIFOUMI</h1><br/>
+    <h2>Sélectionner Pierre, Feuille ou Ciseaux et lancer la bataille </H2>
+    <p>tant que la barre de vie est présente !</p>
+    <div id="div1"></div><!-- Barre de vie -->
+
+    <H3><img src="choix1.png" width="200"> <input type="radio" id="roche" name='rpc'/> <img src="choix2.png" width="200"> <input type="radio" id="papier" name='rpc'/> <img src="choix3.png" width="200"> <input type="radio" id="ciseau" name='rpc'/><br/>
+    </h3>
+    <!-- Boutons radio servant à permettre le choix de «Roche» «Papier» ou «Ciseau» -->
+
+    <input type="button" id="bouton" value="Bataille" onclick="validation()"/><br/><!-- Bouton pour lancer l'affrontement -->
+
+    <input type="text" id="message" /><br/>
+    <!-- Dans cette boîte de texte sera indiqué qui a gagné ou perdu -->
+
+
+
+    <input type="text" id="choixJoueur" size="40" /><br/><!-- Dans cette boîte de texte sera indiqué le choix de joueur -->
+
+    <input type="text" id="choixOrdinateur" size="40" /><br/>
+    <!-- Dans cette boîte de texte sera indiqué le choix de l'ordinateur -->
+
+    <input type="text" id="ScoreUser" /><br/>
+    <input type="text" id="ScoreOrdi" /><br/>
+    <!-- Dans cette boîte de texte sera indiqué les scores  -->
+
+
+  </body>
+</html>
